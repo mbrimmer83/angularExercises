@@ -7,3 +7,6 @@
 <a href="http://www.imdb.com/title/{{data.imdb_id}}">IMDB: {{data.title}}</a></br>
 Release date: {{data.release_date}}</br>
 Runtime: {{data.runtime}}</br>
+<p ng-repeat="genres in data.genres">Genre: {{genres.name}}</p>
+<p ng-repeat="comp in data.production_companies">Production Company: {{comp.name}}</p>
+<p ng-repeat="country in data.production_countries">Made in: {{country.name}}</p>
